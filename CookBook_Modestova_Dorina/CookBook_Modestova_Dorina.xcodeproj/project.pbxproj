@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F81DFD927CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3F81DFD827CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F81DFDF27CCF5D600A278A7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F81DFDD27CCF5D600A278A7 /* Interface.storyboard */; };
+		3F81DFE127CCF5D700A278A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F81DFE027CCF5D700A278A7 /* Assets.xcassets */; };
+		3F81DFE727CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3F81DFE627CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F81DFEC27CCF5D800A278A7 /* TableRecipesIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81DFEB27CCF5D800A278A7 /* TableRecipesIC.swift */; };
+		3F81DFEE27CCF5D800A278A7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81DFED27CCF5D800A278A7 /* ExtensionDelegate.swift */; };
+		3F81DFF027CCF5D800A278A7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81DFEF27CCF5D800A278A7 /* ComplicationController.swift */; };
+		3F81DFF227CCF5D800A278A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F81DFF127CCF5D800A278A7 /* Assets.xcassets */; };
+		3F81E00227CCF92000A278A7 /* RowTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81E00127CCF92000A278A7 /* RowTable.swift */; };
+		3F81E00427CCFA6700A278A7 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81E00327CCFA6700A278A7 /* Recipes.swift */; };
+		3FD8A3B427D0D3FF00862A56 /* DetailRecipeIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8A3B327D0D3FF00862A56 /* DetailRecipeIC.swift */; };
+		3FD8A3B627D0DA0200862A56 /* RecipeDescriptionIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8A3B527D0DA0200862A56 /* RecipeDescriptionIC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F81DFDA27CCF5D600A278A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F81DFCE27CCF5D600A278A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F81DFD727CCF5D600A278A7;
+			remoteInfo = "CookBook_Modestova_Dorina WatchKit App";
+		};
+		3F81DFE827CCF5D800A278A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F81DFCE27CCF5D600A278A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F81DFE527CCF5D800A278A7;
+			remoteInfo = "CookBook_Modestova_Dorina WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F81DFF927CCF5D800A278A7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3F81DFE727CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F81DFFD27CCF5D800A278A7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3F81DFD927CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F81DFD427CCF5D600A278A7 /* CookBook_Modestova_Dorina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook_Modestova_Dorina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F81DFD827CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CookBook_Modestova_Dorina WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F81DFDE27CCF5D600A278A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3F81DFE027CCF5D700A278A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F81DFE627CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CookBook_Modestova_Dorina WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F81DFEB27CCF5D800A278A7 /* TableRecipesIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRecipesIC.swift; sourceTree = "<group>"; };
+		3F81DFED27CCF5D800A278A7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3F81DFEF27CCF5D800A278A7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3F81DFF127CCF5D800A278A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F81DFF327CCF5D800A278A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F81E00127CCF92000A278A7 /* RowTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTable.swift; sourceTree = "<group>"; };
+		3F81E00327CCFA6700A278A7 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		3FD8A3B327D0D3FF00862A56 /* DetailRecipeIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeIC.swift; sourceTree = "<group>"; };
+		3FD8A3B527D0DA0200862A56 /* RecipeDescriptionIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDescriptionIC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F81DFE327CCF5D800A278A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F81DFCD27CCF5D600A278A7 = {
+			isa = PBXGroup;
+			children = (
+				3F81DFDC27CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App */,
+				3F81DFEA27CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension */,
+				3F81DFD527CCF5D600A278A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F81DFD527CCF5D600A278A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F81DFD427CCF5D600A278A7 /* CookBook_Modestova_Dorina.app */,
+				3F81DFD827CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App.app */,
+				3F81DFE627CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F81DFDC27CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3F81DFDD27CCF5D600A278A7 /* Interface.storyboard */,
+				3FD8A3B527D0DA0200862A56 /* RecipeDescriptionIC.swift */,
+				3FD8A3B327D0D3FF00862A56 /* DetailRecipeIC.swift */,
+				3F81E00327CCFA6700A278A7 /* Recipes.swift */,
+				3F81DFE027CCF5D700A278A7 /* Assets.xcassets */,
+			);
+			path = "CookBook_Modestova_Dorina WatchKit App";
+			sourceTree = "<group>";
+		};
+		3F81DFEA27CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3F81DFEB27CCF5D800A278A7 /* TableRecipesIC.swift */,
+				3F81E00127CCF92000A278A7 /* RowTable.swift */,
+				3F81DFED27CCF5D800A278A7 /* ExtensionDelegate.swift */,
+				3F81DFEF27CCF5D800A278A7 /* ComplicationController.swift */,
+				3F81DFF127CCF5D800A278A7 /* Assets.xcassets */,
+				3F81DFF327CCF5D800A278A7 /* Info.plist */,
+			);
+			path = "CookBook_Modestova_Dorina WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F81DFD327CCF5D600A278A7 /* CookBook_Modestova_Dorina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F81DFFE27CCF5D800A278A7 /* Build configuration list for PBXNativeTarget "CookBook_Modestova_Dorina" */;
+			buildPhases = (
+				3F81DFD227CCF5D600A278A7 /* Resources */,
+				3F81DFFD27CCF5D800A278A7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F81DFDB27CCF5D600A278A7 /* PBXTargetDependency */,
+			);
+			name = CookBook_Modestova_Dorina;
+			productName = CookBook_Modestova_Dorina;
+			productReference = 3F81DFD427CCF5D600A278A7 /* CookBook_Modestova_Dorina.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		3F81DFD727CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F81DFFA27CCF5D800A278A7 /* Build configuration list for PBXNativeTarget "CookBook_Modestova_Dorina WatchKit App" */;
+			buildPhases = (
+				3F81DFD627CCF5D600A278A7 /* Resources */,
+				3F81DFF927CCF5D800A278A7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F81DFE927CCF5D800A278A7 /* PBXTargetDependency */,
+			);
+			name = "CookBook_Modestova_Dorina WatchKit App";
+			productName = "CookBook_Modestova_Dorina WatchKit App";
+			productReference = 3F81DFD827CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3F81DFE527CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F81DFF627CCF5D800A278A7 /* Build configuration list for PBXNativeTarget "CookBook_Modestova_Dorina WatchKit Extension" */;
+			buildPhases = (
+				3F81DFE227CCF5D800A278A7 /* Sources */,
+				3F81DFE327CCF5D800A278A7 /* Frameworks */,
+				3F81DFE427CCF5D800A278A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CookBook_Modestova_Dorina WatchKit Extension";
+			productName = "CookBook_Modestova_Dorina WatchKit Extension";
+			productReference = 3F81DFE627CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F81DFCE27CCF5D600A278A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					3F81DFD327CCF5D600A278A7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3F81DFD727CCF5D600A278A7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3F81DFE527CCF5D800A278A7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 3F81DFD127CCF5D600A278A7 /* Build configuration list for PBXProject "CookBook_Modestova_Dorina" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F81DFCD27CCF5D600A278A7;
+			productRefGroup = 3F81DFD527CCF5D600A278A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F81DFD327CCF5D600A278A7 /* CookBook_Modestova_Dorina */,
+				3F81DFD727CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App */,
+				3F81DFE527CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F81DFD227CCF5D600A278A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F81DFD627CCF5D600A278A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F81DFE127CCF5D700A278A7 /* Assets.xcassets in Resources */,
+				3F81DFDF27CCF5D600A278A7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F81DFE427CCF5D800A278A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F81DFF227CCF5D800A278A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F81DFE227CCF5D800A278A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD8A3B427D0D3FF00862A56 /* DetailRecipeIC.swift in Sources */,
+				3F81E00427CCFA6700A278A7 /* Recipes.swift in Sources */,
+				3FD8A3B627D0DA0200862A56 /* RecipeDescriptionIC.swift in Sources */,
+				3F81DFEE27CCF5D800A278A7 /* ExtensionDelegate.swift in Sources */,
+				3F81E00227CCF92000A278A7 /* RowTable.swift in Sources */,
+				3F81DFEC27CCF5D800A278A7 /* TableRecipesIC.swift in Sources */,
+				3F81DFF027CCF5D800A278A7 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F81DFDB27CCF5D600A278A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F81DFD727CCF5D600A278A7 /* CookBook_Modestova_Dorina WatchKit App */;
+			targetProxy = 3F81DFDA27CCF5D600A278A7 /* PBXContainerItemProxy */;
+		};
+		3F81DFE927CCF5D800A278A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F81DFE527CCF5D800A278A7 /* CookBook_Modestova_Dorina WatchKit Extension */;
+			targetProxy = 3F81DFE827CCF5D800A278A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F81DFDD27CCF5D600A278A7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F81DFDE27CCF5D600A278A7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F81DFF427CCF5D800A278A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F81DFF527CCF5D800A278A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F81DFF727CCF5D800A278A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CookBook_Modestova_Dorina WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CookBook_Modestova_Dorina WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ModDor.CookBook-Modestova-Dorina.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3F81DFF827CCF5D800A278A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CookBook_Modestova_Dorina WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CookBook_Modestova_Dorina WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ModDor.CookBook-Modestova-Dorina.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3F81DFFB27CCF5D800A278A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CookBook_Modestova_Dorina_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "CookBook_Modestova_Dorina WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ModDor.CookBook-Modestova-Dorina.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3F81DFFC27CCF5D800A278A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CookBook_Modestova_Dorina_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "CookBook_Modestova_Dorina WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ModDor.CookBook-Modestova-Dorina.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3F81DFFF27CCF5D800A278A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ModDor.CookBook-Modestova-Dorina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3F81E00027CCF5D800A278A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ModDor.CookBook-Modestova-Dorina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F81DFD127CCF5D600A278A7 /* Build configuration list for PBXProject "CookBook_Modestova_Dorina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F81DFF427CCF5D800A278A7 /* Debug */,
+				3F81DFF527CCF5D800A278A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F81DFF627CCF5D800A278A7 /* Build configuration list for PBXNativeTarget "CookBook_Modestova_Dorina WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F81DFF727CCF5D800A278A7 /* Debug */,
+				3F81DFF827CCF5D800A278A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F81DFFA27CCF5D800A278A7 /* Build configuration list for PBXNativeTarget "CookBook_Modestova_Dorina WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F81DFFB27CCF5D800A278A7 /* Debug */,
+				3F81DFFC27CCF5D800A278A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F81DFFE27CCF5D800A278A7 /* Build configuration list for PBXNativeTarget "CookBook_Modestova_Dorina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F81DFFF27CCF5D800A278A7 /* Debug */,
+				3F81E00027CCF5D800A278A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F81DFCE27CCF5D600A278A7 /* Project object */;
+}

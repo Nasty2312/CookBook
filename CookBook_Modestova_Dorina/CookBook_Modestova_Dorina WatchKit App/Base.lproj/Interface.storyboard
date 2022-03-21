@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19454"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="logo" id="f8e-Cr-85N"/>
+                        <label alignment="center" verticalAlignment="center" text="CookBook" id="54C-tw-lA5">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <segue destination="xrq-xB-rhD" kind="relationship" relationship="nextPage" id="B9J-Dd-FTL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-140" y="-38"/>
+        </scene>
+        <!--Table RecipesIC-->
+        <scene sceneID="1VP-Cn-33K">
+            <objects>
+                <controller id="xrq-xB-rhD" customClass="TableRecipesIC" customModule="CookBook_Modestova_Dorina_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="A9C-Mo-1yo">
+                            <items>
+                                <tableRow identifier="tableRow" id="qeu-Py-GWs" customClass="RowTable" customModule="CookBook_Modestova_Dorina_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="rbt-f9-bdD">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="swift" catalog="system" id="p88-fE-4FJ">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label alignment="left" verticalAlignment="center" text="RecName" id="yWu-c5-5qa"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowRecipeName" destination="yWu-c5-5qa" id="Hl1-yT-Qxc"/>
+                                        <outlet property="rowRicture" destination="p88-fE-4FJ" id="SfI-zZ-P8h"/>
+                                        <segue destination="bNT-bh-vlf" kind="push" id="O3W-6V-yMt"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="A9C-Mo-1yo" id="nEf-Mp-Mtp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="109" y="-39"/>
+        </scene>
+        <!--Detail RecipeIC-->
+        <scene sceneID="WgP-CW-wRO">
+            <objects>
+                <controller id="bNT-bh-vlf" customClass="DetailRecipeIC" customModule="CookBook_Modestova_Dorina_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="4Aj-5N-Gda">
+                            <items>
+                                <imageView width="24" height="24" alignment="center" verticalAlignment="center" id="3tK-Eg-IID"/>
+                                <label width="68" alignment="center" verticalAlignment="center" text="IC name" id="U6x-RO-PUN"/>
+                            </items>
+                        </group>
+                        <imageView height="40" alignment="center" id="cT4-Iw-ZWD"/>
+                        <group width="1" alignment="left" layout="vertical" id="R7Y-Cd-Yzb">
+                            <items>
+                                <label alignment="left" text="Автор:" id="TF4-bz-Trs"/>
+                                <label alignment="left" text="authorName" id="6zJ-NV-52L"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Yby-fq-fhS">
+                            <items>
+                                <label alignment="left" text="Описание:" id="fTw-Do-K38"/>
+                                <button alignment="left" id="nNN-pd-dzE">
+                                    <group key="contentGroup" width="1" alignment="left" id="h3a-e5-SYj">
+                                        <items>
+                                            <label alignment="left" text="recipeText" id="rJJ-N1-QM7"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <segue destination="4kM-qS-Uog" kind="modal" id="yCu-jM-YjO"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" maximum="5" steps="5" minimumImage="star" catalog="system" maximumImage="star.fill" id="MLP-LG-Zgs">
+                            <color key="color" red="0.97254901960784312" green="0.70196078431372544" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="changeRating:" destination="bNT-bh-vlf" id="jBh-CW-7G7"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="authorRecipe" destination="6zJ-NV-52L" id="ZdR-UY-Ed3"/>
+                        <outlet property="iconRecipe" destination="3tK-Eg-IID" id="MXx-d8-2qD"/>
+                        <outlet property="imageRecipe" destination="cT4-Iw-ZWD" id="aaA-jn-qVF"/>
+                        <outlet property="nameRecipe" destination="U6x-RO-PUN" id="qiP-mk-Dpv"/>
+                        <outlet property="ratingRecipe" destination="MLP-LG-Zgs" id="DlA-DJ-TJF"/>
+                        <outlet property="textRecipe" destination="rJJ-N1-QM7" id="xy2-FI-S0a"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="349" y="-39"/>
+        </scene>
+        <!--Recipe DescriptionIC-->
+        <scene sceneID="D3F-V8-hN5">
+            <objects>
+                <controller id="4kM-qS-Uog" customClass="RecipeDescriptionIC" customModule="CookBook_Modestova_Dorina_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="recipeText" textAlignment="justified" numberOfLines="0" id="Slz-t7-Y6y"/>
+                    </items>
+                    <connections>
+                        <outlet property="fullRecipeLable" destination="Slz-t7-Y6y" id="noW-DJ-coq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="593" y="-39"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="48" height="48"/>
+        <image name="star" catalog="system" width="128" height="115"/>
+        <image name="star.fill" catalog="system" width="128" height="115"/>
+        <image name="swift" catalog="system" width="128" height="112"/>
+    </resources>
+</document>
